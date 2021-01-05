@@ -9,10 +9,10 @@ function calculateTotal(arr) {
     total += arr[i];
   }
   if (total > 100) {
-    console.log(`Lots of spendings`);
+    console.log(`Lots of spendings, Total is : ${total}`);
     return total;
   }
-  console.log(`You're good on spendings`);
+  console.log(`You're good on spendings, Total is : ${total}`);
   return total;
 }
 
