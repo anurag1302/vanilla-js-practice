@@ -43,3 +43,21 @@ console.log(`Person 2 name is ${person2.name}`);
 person2.name = "John";
 console.log(`Person 1 name is ${person.name}`);
 console.log(`Person 2 name is ${person2.name}`);
+
+//Null and Undefined
+//Null is something which the developer sets
+//null is an assignment value.
+//It can be assigned to a variable as a representation of no value
+//Undefined refers to something whose value is not found by JavaScript
+//undefined means a variable has been declared but has not yet been assigned a value,
+//or even a variable hasn't been defined at all
+//Ex: 1) variable without value 2) missing function parameters
+//    3) missing object properties
+
+let num1 = 20 + null; //20
+console.log(`num1 is ${num1}`);
+let num2 = 30 + undefined; //NaN
+console.log(`num2 is ${num2}`);
+console.log(typeof undefined);
+console.log(typeof null);
+//typeof null is object - its an error in the original javascript implementation
