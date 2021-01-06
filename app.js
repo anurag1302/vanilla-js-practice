@@ -61,3 +61,27 @@ console.log(`num2 is ${num2}`);
 console.log(typeof undefined);
 console.log(typeof null);
 //typeof null is object - its an error in the original javascript implementation
+
+// *****************************************************
+// Truthy and Falsy
+// Apart from Booleans in IF statements pertaining to true and false,
+// we have almost everything as truthy in Javascript apart from few falsy values.
+// The falsy ones are "", '',``, 0, -0, NaN, false, null, undefined
+const text = "John";
+if (text) {
+  console.log(`The value: ${text} is truthy.`);
+} else {
+  console.log(`The value: ${text} is falsy.`);
+}
+
+//const text2 = ``;
+//const text2 = NaN;
+//const text2 = null;
+//const text2 = undefined;
+//const text2 = 0;
+const text2 = -0;
+if (text2) {
+  console.log(`The value ${text2} is truthy.`);
+} else {
+  console.log(`The value ${text2} is falsy.`);
+}
