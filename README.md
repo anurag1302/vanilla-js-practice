@@ -17,3 +17,9 @@
 ## Truthy & Falsy ##
 ### Apart from Booleans in IF statements pertaining to true and false, we have almost everything as truthy in Javascript apart from few falsy values. ###
 ### The falsy ones are "", '',``, 0, -0, NaN, false, null, undefined ###
+
+## Global & Local Scope ##
+### Anything outside the code blocks {} is global scope, can be accessed anywhere, can be modified within functions, within expressions ###
+### Local Scope - variables withing a code block {} are locally scoped ###
+### These can't be accessed outside the code block ###
+### Locally scoped variabl;es need to be declared with keywords inside the code block, else they will act as Global vars and will be accessible outside. ###
