@@ -13,3 +13,7 @@
 ### undefined means a variable has been declared but has not yet been assigned a value,or even a variable hasn't been defined at all ###
 ### Ex: 1) variable without value 2) missing function parameters 3) missing object properties ###
 ### typeof null is object - its an error in the original javascript implementation ###
+
+## Truthy & Falsy ##
+### Apart from Booleans in IF statements pertaining to true and false, we have almost everything as truthy in Javascript apart from few falsy values. ###
+### The falsy ones are "", '',``, 0, -0, NaN, false, null, undefined ###
