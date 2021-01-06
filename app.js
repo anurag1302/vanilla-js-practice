@@ -85,3 +85,42 @@ if (text2) {
 } else {
   console.log(`The value ${text2} is falsy.`);
 }
+//*********************************************/
+//Global & Local Scope
+//Anything outside the code blocks {} is global scope,
+//can be accessed anywhere, can be modified within functions, within expressions
+
+let firstName = "John";
+function Concatenate() {
+  firstName = "Kane";
+  console.log(`First Name is ${firstName}`);
+}
+Concatenate();
+if (true) {
+  firstName = "Nicholson";
+}
+console.log(`First Name is ${firstName}`);
+
+//****************************************/
+//Local Scope - variables withing a code block {} are locally scoped
+// These can't be accessed outside the code block
+// Locally scoped variabl;es need to be declared with keywords inside the code block,
+// else they will act as Global vars and will be accessible outside.
+
+let lastName = "Cena";
+function sample() {
+  let lastName = "Cena123";
+  let age = 34;
+  city = "NY"; //is a global var and accessible outside the function
+  console.log(`Last name is ${lastName} and age is ${age}`);
+}
+sample();
+console.log(city);
+console.log(lastName);
+//console.log(age); //will give error - age is not defined, doesn't matter whether function is invoked or not.
+//sample();
+if (1) {
+  let lastName = "Henderson";
+  let age = 56;
+  console.log(`Last name is ${lastName} and age is ${age}`);
+}
