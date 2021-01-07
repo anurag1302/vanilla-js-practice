@@ -155,3 +155,20 @@ function userInput(callback) {
   callback(value);
 }
 userInput(greeting);
+
+//Array Methods - forEach() - returns a new array
+//array.forEach(callback); takes in a callback, we dont invoke the callback.
+const courses = [
+  { id: 1, name: "maths", faculty: "Mr. A" },
+  { id: 2, name: "english", faculty: "Mrs. B" },
+  { id: 3, name: "science", faculty: "Miss. C" },
+  { id: 4, name: "hindi", faculty: "Mr. D" },
+];
+
+courses.forEach(function (course) {
+  console.log(course.name.toUpperCase());
+});
+
+courses.forEach((course) => {
+  console.log(course.faculty.toLowerCase());
+});
