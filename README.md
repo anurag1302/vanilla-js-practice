@@ -23,3 +23,10 @@
 ### Local Scope - variables withing a code block {} are locally scoped ###
 ### These can't be accessed outside the code block ###
 ### Locally scoped variabl;es need to be declared with keywords inside the code block, else they will act as Global vars and will be accessible outside. ###
+
+## Callbacks ##
+### Callback functions are passed as a parameter to another function. ###
+### When the parent function is invoked, the callback function is passed as a reference and is not invoked there. ###
+### The callback function is invoked inside the parent function, as and when needed. ###
+### A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action. ###
+
