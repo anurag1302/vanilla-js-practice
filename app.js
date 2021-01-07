@@ -124,3 +124,34 @@ if (1) {
   let age = 56;
   console.log(`Last name is ${lastName} and age is ${age}`);
 }
+
+//Callback functions are passed as a parameter to another function.
+//When the parent function is invoked, the callback function is passed as a reference and is not invoked there.
+//The callback function is invoked inside the parent function, as and when needed,
+//A callback function is a function passed into another function as an argument,
+//which is then invoked inside the outer function to complete some kind of routine or action.
+
+function upperCase(name) {
+  return `Your name in uppercase is ${name.toUpperCase()}`;
+}
+
+function lowerCase(name) {
+  return `Your name in lowercase is ${name.toLowerCase()}`;
+}
+
+function displayMessage(name, callback) {
+  console.log(`Hello ${name}, ${callback(name)}`);
+}
+
+displayMessage("John", upperCase);
+displayMessage("Henry", lowerCase);
+
+function greeting(name) {
+  console.log(`Hello there ${name}, how are you?`);
+}
+
+function userInput(callback) {
+  let value = prompt("Enter name");
+  callback(value);
+}
+userInput(greeting);
