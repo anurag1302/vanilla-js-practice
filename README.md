@@ -34,6 +34,10 @@
 ### Array Methods - forEach() - does not return a new array ###
 ### array.forEach(callback); takes in a callback, we don't invoke the callback, we just pass it. ###
 
-## Array.map ##
+## Array.map() ##
 ### returns a new array, doesn't change the size of the original array, uses original array contents to create the new array. ###
+
+## Array.filter() ##
+### returns a new array based upon condition, the new array size can be diff than the original array ###
+### returns an empty array if the condition doesn't yield any result ###
 
