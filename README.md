@@ -31,6 +31,6 @@
 ### A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action. ###
 
 ## forEach ##
-### Array Methods - forEach() - returns a new array ###
+### Array Methods - forEach() - does not return a new array ###
 ### array.forEach(callback); takes in a callback, we don't invoke the callback, we just pass it. ###
 
