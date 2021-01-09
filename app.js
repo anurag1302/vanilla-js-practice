@@ -194,4 +194,17 @@ const newCourses2 = courses.map((c) => {
   };
 });
 console.log(newCourses2);
-document.body.innerHTML = newCourses2.newCourseName.join("");
+
+//Array.filter - returns a new array based upon condition
+// the new array size can be diff than the original array
+//returns an empty array if the condition doesn't yield any result
+
+const latestCourses = courses.filter((course) => {
+  return course.id > 2;
+});
+console.log(latestCourses);
+
+const latestCourses1 = courses.filter((course) => {
+  return course.id > 8;
+});
+console.log(latestCourses1);
