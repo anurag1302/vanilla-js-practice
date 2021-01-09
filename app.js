@@ -156,7 +156,7 @@ function userInput(callback) {
 }
 userInput(greeting);
 
-//Array Methods - forEach() - returns a new array
+//Array Methods - forEach() - doesn't return a new array
 //array.forEach(callback); takes in a callback, we dont invoke the callback.
 const courses = [
   { id: 1, name: "maths", faculty: "Mr. A" },
@@ -172,3 +172,26 @@ courses.forEach(function (course) {
 courses.forEach((course) => {
   console.log(course.faculty.toLowerCase());
 });
+
+//Array.map - returns a new array
+//doesn't change the size of the original array,
+//uses original array contents to create the new array.
+
+const newCourses = courses.map((course) => {
+  //return course.name.toUpperCase();
+  return {
+    id: `ABC${course.id}`,
+    newCourseName: course.name.toUpperCase(),
+  };
+});
+
+console.log(newCourses);
+
+const newCourses2 = courses.map((c) => {
+  return {
+    newCourseName: c.name.toLowerCase(),
+    faculty: c.faculty.toUpperCase(),
+  };
+});
+console.log(newCourses2);
+document.body.innerHTML = newCourses2.newCourseName.join("");
